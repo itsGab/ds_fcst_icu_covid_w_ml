@@ -78,9 +78,9 @@ Dicas e truques: Considerando que um modelo preditivo usando todas as janelas de
 
 > Disclaimer: texto baseado na contextualização do [desafio](https://www.kaggle.com/S%C3%ADrio-Libanes/covid19).
 
-# Projeto
+# 2. Projeto
 
-## Divisão:
+## 2.1. Divisão:
 ### 1. Tratamento dos dados
 ### 2. Análise exploratória
 ### 3. Modelos de ML
