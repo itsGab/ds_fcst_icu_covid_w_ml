@@ -1,6 +1,4 @@
-# Previsão de admissão na UTI de casos confirmados de COVID-19
-
-# Predicao de pacientes com covid que precisarão de UTI com Machine Learning
+# Previsão de admissão na UTI de casos confirmados de COVID-19 com Machine Learning
 
 O projeto é baseado em um [desafio proposto no kaggle pelo hospital sirio libanes](https://www.kaggle.com/S%C3%ADrio-Libanes/covid19).
 
