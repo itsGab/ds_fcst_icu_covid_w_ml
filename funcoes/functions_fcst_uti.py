@@ -1,5 +1,3 @@
-# -*- coding: utf-8 -*-
-
 def remove_space(col):
     '''
     funcao que substitui espaco por underline (underscore).
