@@ -4,8 +4,8 @@ O texto a seguir, foi retirado da pagina do [Kaggle](https://www.kaggle.com/S%C3
 - [Descrição](#descrição)
 - [Contexto](#contexto)
 	- [Call to action](#call-to-action)
-	- [Tarefa 01](#tarefa-01)
-	- [Tarefa 02](#tarefa-02)
+		* [Tarefa 01](#tarefa-01)
+		* [Tarefa 02](#tarefa-02)
 - [Os dados](#os-dados)
 	- [Etiqueta de saída](#etiqueta-de-saída)
 	- [Conceito de janela (window)](#conceito-de-janela-window)
@@ -15,8 +15,9 @@ O texto a seguir, foi retirado da pagina do [Kaggle](https://www.kaggle.com/S%C3
 - [Dúvidas e informações](#dúvidas-e-informações)
 - [Kernel Interessante Selecionado](#kernel-interessante-selecionado)
 - [Perguntas frequentes](#perguntas-frequentes)
-- [Compartilhamento e uso de dados](#compartilhamento-e-usa-de-dados)
-- [Dicas e truques](#dicas-e-truques)
+- [Compartilhamento e uso de dados](#compartilhamento-e-uso-de-dados)
+- [Dicas e
+ truques](#dicas-e-truques)
 	- [Dados ausentes](#dados-ausentes)
 	- [Quanto mais cedo melhor](#quanto-mais-cedo-melhor)
 - [Reconhecimento](#reconhecimento)
@@ -35,12 +36,12 @@ Há urgência na obtenção de dados precisos para melhor prever e preparar os s
 ![](https://img.medscape.com/thumbnail_library/cdc_200313_flatten_the_curve_800x450.jpg)
 
 
-* **Tarefa 01**
+#### Tarefa 01
 Prever admissão na UTI de casos confirmados de COVID-19.
 Com base nos dados disponíveis, é viável prever quais pacientes precisarão de suporte em unidade de terapia intensiva?
 O objetivo é fornecer aos hospitais terciários e trimestrais a resposta mais precisa, para que os recursos da UTI possam ser arranjados ou a transferência do paciente possa ser agendada.
 
-* **Tarefa 02**
+#### Tarefa 02
 Prever NÃO admissão à UTI de casos COVID-19 confirmados.
 Com base na subamostra de dados amplamente disponíveis, é viável prever quais pacientes precisarão de suporte de unidade de terapia intensiva?
 O objetivo é fornecer aos hospitais locais e temporários uma resposta boa o suficiente, para que os médicos de linha de frente possam dar alta com segurança e acompanhar remotamente esses pacientes.
@@ -77,7 +78,7 @@ Exemplos:
 Este conjunto de dados contém dados anônimos do Hospital Sírio-Libanês, São Paulo e Brasília. Todos os dados foram tornados anônimos de acordo com as melhores práticas e recomendações internacionais.
 Os dados foram limpos e escalados por coluna de acordo com o Min Max Scaler para caber entre -1 e 1.
 
-### Dado disponível
+### Dados disponível
 1. Informações demográficas do paciente (03)
 2. Doenças anteriores agrupadas de pacientes (09)
 3. Resultados de sangue (36)
@@ -102,7 +103,7 @@ Soluções interessantes divulgadas neste concurso de conjunto de dados serão c
 ## Compartilhamento e uso de dados
 ![](https://www.googleapis.com/download/storage/v1/b/kaggle-user-content/o/inbox%2F1591620%2Fa6d09844fc8030e0f06f03e0c9e6c76d%2FLicence.png?generation=1587074246329486&alt=media)
 
-## Dicas & Truques
+## Dicas e Truques
 ### Dados ausentes
 Problema: um dos maiores desafios de trabalhar com dados de saúde é que a taxa de amostragem varia entre os diferentes tipos de medições. Por exemplo, os sinais vitais são coletados com mais frequência (geralmente de hora em hora) do que os laboratórios de sangue (geralmente diariamente).
 
