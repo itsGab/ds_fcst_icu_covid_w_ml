@@ -6,13 +6,16 @@ def remove_space(col):
         col = col.replace(' ', '_')
     return col
 
-def prepare_window(rows):
+
+def prepara_primeira_janela(df_agrupado):
     '''
-    prepara a janela com o resultado do ICU na primeira janela
+    prepara a primeira janela, caso o paciente tenha ido em algum
+    momento para a UTI
     '''
-    if np.any(rows['icu']):
-        rows.loc[rows['window'] == '0-2', 'icu'] = 1
-    return rows.loc[rows['window'] == '0-2']
+    if any(df_agrupado['ICU']):
+        linha = df_agrupado.loc[df_agrupado['WINDOW'] ==  '0-2', 'ICU'] = 1
+    return linha
+
 
 def remove_corr_var(dados, valor_corte):
     '''
