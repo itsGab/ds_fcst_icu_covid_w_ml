@@ -78,8 +78,10 @@ Dicas e truques: Considerando que um modelo preditivo usando todas as janelas de
 
 > Disclaimer: texto baseado na contextualização do [desafio](https://www.kaggle.com/S%C3%ADrio-Libanes/covid19).
 
-## Módulos
-1. Limpeza e tratamento
-2. Análise exploratória
-3. Modelo de ML
-4. Desemepenho e conclusão
+# Projeto
+
+## Divisão:
+### 1. Tratamento dos dados
+### 2. Análise exploratória
+### 3. Modelos de ML
+### 4. Conclusões
