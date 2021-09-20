@@ -12,7 +12,7 @@
 
 ## 1.1.  Contextualização
     
-A pandemia de COVID-19 atingiu o mundo inteiro, sobrecarregando os sistemas de saúde despreparados para um solicitação tão intensa e demorada de leitos de UTI, profissionais, equipamentos de proteção individual e recursos de saúde.
+A pandemia de COVID-19 atingiu o mundo inteiro, sobrecarregando os sistemas de saúde despreparados para uma demanda tão intensa e demorada de leitos de UTI, profissionais, equipamentos de proteção individual e recursos de saúde.
 
 Tendo como intuito de melhor preparar os sistemas de saúde e evitar colapsos, foi desenvolvido um desafio no [Kaggle](https://www.kaggle.com/S%C3%ADrio-Libanes/covid19), definidos pela necessidade de leitos de UTI acima da capacidade (presumindo-se que haja recursos humanos, EPIs e profissionais disponíveis), utilizando dados clínicos individuais - em vez de dados epidemiológicos e populacionais.
 
