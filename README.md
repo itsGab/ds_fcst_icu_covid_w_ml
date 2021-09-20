@@ -1,12 +1,14 @@
 <h1 align='center'> :syringe: Previsão de Admissão na UTI por COVID-19 :hospital: </h1>
 <h3> :man_health_worker: Progresso: </h1>
 
+
  - [x] :floppy_disk: Tratamento dos dados
  - [ ] :chart_with_upwards_trend: Análise exploratória
  - [ ] :robot: Modelos de ML
  - [ ] :clipboard: Conclusões
  - [ ] :heavy_check_mark: Finalizado
 
+![enter image description here](https://github.com/itsGab/previsao_uti_em_covid/raw/main/images/previsao_covid.jpg)
 
 # 1.  Introdução
 
