@@ -1,3 +1,13 @@
+<h1 align='center'> 👷 🚧 PROJETO EM CONSTRUÇÃO 🚧 </h1>
+<h3> 👷 🚧 Progresso: 🚧 </h1>
+
+ - [x] Tratamento dos dados
+ - [ ]  Análise exploratória
+ - [ ]  Modelos de ML
+ - [ ]  Conclusões
+ - [ ]  Finalizado
+
+
 # 1.  Introdução
 
 ## 1.1.  Contextualização
@@ -97,7 +107,7 @@ No total, são 54 recursos, expandidos quando pertinentes à média, mediana, ma
 
 **Dicas e truques**: Considerando que um modelo preditivo usando todas as janelas de tempo provavelmente produzirá uma maior precisão, um bom modelo usando apenas o primeiro (0-2) provavelmente será mais clinicamente relevante. A criatividade é muito bem-vinda, sinta-se à vontade com a engenharia de recursos e as janelas de tempo. Atenção às medidas repetidas em indivíduos, uma vez que esses valores são (positivamente) correlacionados ao brincar com os dados.
 
-> Disclaimer: texto baseado na contextualização do [desafio](https://www.kaggle.com/S%C3%ADrio-Libanes/covid19).
+> Para mais informações acessar a página do [desafio no Kaggle](https://www.kaggle.com/S%C3%ADrio-Libanes/covid19).
 
 # 2. Projeto
 
@@ -105,9 +115,9 @@ No total, são 54 recursos, expandidos quando pertinentes à média, mediana, ma
 * Substituição de espaços, por underscore, no nome das colunas.
 * Remoção dos pacientes que foram admitidos na UTI na primeira janela ("0-2")
 * Preparação da janela primeira janela, para a variável alvo ('UCI') igual a 1, para os pacientes que foram precisaram da UTI após a primeira janela.
-* Preenchimento dados vazios, de exames laboratoriais e sinais vitais, ignorando dados obtidos após a admissão na UTI,  utilizando `fillna(method=bfill)`
+* Preenchimento dados vazios, de exames laboratoriais e sinais vitais, ignorando dados obtidos após a admissão na UTI,  utilizando `pd.DataFrame.fillna(method=bfill)`
 * Manutenção apenas da primeira janela, tendo em vista, a necessidade da previsão de admissão para a UTI o mais cedo possível
-* Transformação dos dados "AGE_PERCENTIL" para dados categóricos.
+* Transformação dos dados "AGE_PERCENTIL" para dados categóricos, utilizando `pd.get_dummies()`.
 * Remoção das colunas, de exames laboratoriais e sinais vitais, com alta correlação.
 * Exportação do conjunto de dados tratado.
 
