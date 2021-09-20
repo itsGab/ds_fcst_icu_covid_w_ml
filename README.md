@@ -1,11 +1,11 @@
 <h1 align='center'> :syringe: Previsão de Admissão na UTI por COVID-19 :hospital: </h1>
-<h3> :man_health_worker: Progresso: :chart_with_upwards_trend: </h1>
+<h3> :man_health_worker: Progresso: </h1>
 
- - [x] Tratamento dos dados
- - [ ]  Análise exploratória
- - [ ]  Modelos de ML
- - [ ]  Conclusões
- - [ ]  Finalizado
+ - [x] :floppy_disk: Tratamento dos dados
+ - [ ] :chart_with_upwards_trend: Análise exploratória
+ - [ ] :robot: Modelos de ML
+ - [ ] :clipboard: Conclusões
+ - [ ] :heavy_check_mark: Finalizado
 
 
 # 1.  Introdução
