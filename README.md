@@ -1,5 +1,5 @@
 <h1 align='center'> :syringe: Previsão de Admissão na UTI por COVID-19 :hospital: </h1>
-<h3> :man_health_worker: 🚧 Progresso: 🚧 </h1>
+<h3> :man_health_worker: Progresso: :chart_with_upwards_trend: </h1>
 
  - [x] Tratamento dos dados
  - [ ]  Análise exploratória
