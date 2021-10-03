@@ -2,8 +2,8 @@
 <h3> :man_health_worker: Progresso: </h1>
 
 
+ - [x] :chart_with_upwards_trend: Análise exploratória
  - [x] :floppy_disk: Tratamento dos dados
- - [ ] :chart_with_upwards_trend: Análise exploratória
  - [ ] :robot: Modelos de ML
  - [ ] :clipboard: Conclusões
  - [ ] :heavy_check_mark: Finalizado
@@ -51,10 +51,10 @@ A Coluna 'WINDOW' foi divida em 5 janelas de admissão na UTI.
 | Window | Descrição |
 |--|--|
 | 0-2 | De 0 á 2 horas da admissão |
-|2-4 | De 2 a 4 horas da admissão |
-|4-6 | De 4 a 6 horas da admissão |
-|6-12 | De 6 a 12 horas da admissão|
-|Above-12 | Acima de 12 horas da admissão |
+| 2-4 | De 2 a 4 horas da admissão |
+| 4-6 | De 4 a 6 horas da admissão |
+| 6-12 | De 6 a 12 horas da admissão|
+| Above_12 | Acima de 12 horas da admissão |
   
 
 > Cuidado para NÃO usar os dados quando a variável de alvo (‘ICU’ = 1) estiver presente, pois a ordem do evento é desconhecida (talvez o evento de destino tenha acontecido antes de os resultados serem obtidos). Eles foram mantidos lá para que possamos aumentar este conjunto de dados em outros resultados posteriormente.
@@ -78,16 +78,16 @@ Formato do Data Frame
 
 ### Dados disponíveis
 
-1. Informações descritivas (03) 
+1.  Informativas (03) 
+		
 		"PATIENT_VISIT_IDENTIFIER", "WINDOWS", "ICU".
+2.  Demográficas do paciente (03)
 
-3.  Informações demográficas do paciente (03)
+3.  Doenças anteriores agrupadas de pacientes (09)
 
-4.  Doenças anteriores agrupadas de pacientes (09)
+4.  Resultados de sangue (36)
 
-5.  Resultados de sangue (36)
-
-6.  Sinais vitais (06)
+5.  Sinais vitais (06)
  
 No total, são 54 recursos, expandidos quando pertinentes à média, mediana, max, min, diff e diff relativo.
 
@@ -109,6 +109,8 @@ No total, são 54 recursos, expandidos quando pertinentes à média, mediana, ma
 
 **Dicas e truques**: Considerando que um modelo preditivo usando todas as janelas de tempo provavelmente produzirá uma maior precisão, um bom modelo usando apenas o primeiro (0-2) provavelmente será mais clinicamente relevante. A criatividade é muito bem-vinda, sinta-se à vontade com a engenharia de recursos e as janelas de tempo. Atenção às medidas repetidas em indivíduos, uma vez que esses valores são (positivamente) correlacionados ao brincar com os dados.
 
+> Para mais informações, você pode acessar o [notebook de análise exploratória]() 
+# **NAO ESQUECER DE COLOCAR O LINK**
 > Para mais informações acessar a página do [desafio no Kaggle](https://www.kaggle.com/S%C3%ADrio-Libanes/covid19).
 
 # 2. Projeto
