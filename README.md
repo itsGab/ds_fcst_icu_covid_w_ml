@@ -89,11 +89,11 @@ Formato do Data Frame
 
 5.  **Sinais vitais** (06)
  
-No total, são 54 recursos, expandidos quando pertinentes à média, mediana, max, min, diff e diff relativo.
+No total, são 54 recursos, expandidos quando pertinentes à média, mediana, máxima, mínima, diferença, diferença relativa (mean, median, max, min, diff e diff_rel).
 
 6.  diff = max - min
     
-7.  diff relativo = diff / mediano
+7.  diff rel = diff / median
       
 
 ### Informações adicionais (dicas e truques)
