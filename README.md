@@ -113,10 +113,14 @@ No total, são 54 recursos, expandidos quando pertinentes à média, mediana, ma
 # **NAO ESQUECER DE COLOCAR O LINK**
 > Para mais informações acessar a página do [desafio no Kaggle](https://www.kaggle.com/S%C3%ADrio-Libanes/covid19).
 
-# 2. Projeto
+# 2. Como foi feito o projeto
+
+### Análise exploratória
+* Abertura dos dados, para ver com o que estavamos trabalhando
+* Separação de colunas por tipo, para dividir as análises
+* Explicação dos dados encontrados
 
 ### 2.1. Tratamento dos dados
-* Substituição de espaços, por underscore, no nome das colunas.
 * Remoção dos pacientes que foram admitidos na UTI na primeira janela ("0-2")
 * Preparação da janela primeira janela, para a variável alvo ('UCI') igual a 1, para os pacientes que foram precisaram da UTI após a primeira janela.
 * Preenchimento dados vazios, de exames laboratoriais e sinais vitais, ignorando dados obtidos após a admissão na UTI,  utilizando `pd.DataFrame.fillna(method=bfill)`
@@ -125,6 +129,8 @@ No total, são 54 recursos, expandidos quando pertinentes à média, mediana, ma
 * Remoção das colunas, de exames laboratoriais e sinais vitais, com alta correlação.
 * Exportação do conjunto de dados tratado.
 
-### Análise exploratória
 ### Modelos de ML
+* Nada ainda
+
 ### Conclusões
+* Nada ainda
