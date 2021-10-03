@@ -109,7 +109,7 @@ No total, são 54 recursos, expandidos quando pertinentes à média, mediana, m�
 
 **Dicas e truques**: Considerando que um modelo preditivo usando todas as janelas de tempo provavelmente produzirá uma maior precisão, um bom modelo usando apenas o primeiro (0-2) provavelmente será mais clinicamente relevante. A criatividade é muito bem-vinda, sinta-se à vontade com a engenharia de recursos e as janelas de tempo. Atenção às medidas repetidas em indivíduos, uma vez que esses valores são (positivamente) correlacionados ao brincar com os dados.
 
-> Para mais informações sobre os dados e a análise exploratória feita, você pode acessar o [notebook de análise exploratória](https://colab.research.google.com/drive/1i19hh-sTSMdPIOfW7iSWuxoiVOCBqsXb?usp=sharing).
+> Para mais informações sobre os dados e a análise exploratória feita, você pode acessar o [notebook de análise exploratória](https://github.com/itsGab/previsao_uti_em_covid/blob/main/notebooks/analise_exploratoria.ipynb).
 > 
 > Para mais informações sobre o desafio e base de dados _raw_, você pode acessar a página do [desafio no Kaggle](https://www.kaggle.com/S%C3%ADrio-Libanes/covid19).
 
