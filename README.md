@@ -78,16 +78,16 @@ Formato do Data Frame
 
 ### Dados disponíveis
 
-1.  Informativas (03) 
+1.  **Informativas** (03) 
 		
 		"PATIENT_VISIT_IDENTIFIER", "WINDOWS", "ICU".
-2.  Demográficas do paciente (03)
+2.  **Demográficas** do paciente (03)
 
-3.  Doenças anteriores agrupadas de pacientes (09)
+3.  **Comorbidades** (09)
 
-4.  Resultados de sangue (36)
+4.  **Exames laboratoriais** (36)
 
-5.  Sinais vitais (06)
+5.  **Sinais vitais** (06)
  
 No total, são 54 recursos, expandidos quando pertinentes à média, mediana, max, min, diff e diff relativo.
 
