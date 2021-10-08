@@ -1,25 +1,15 @@
 <h1 align='center'> :syringe: Previsão de Admissão na UTI por COVID-19 :hospital: </h1>
-<h3> :man_health_worker: Progresso: </h1>
 
+#  Introdução
 
- - [x] :chart_with_upwards_trend: Análise exploratória
- - [x] :floppy_disk: Tratamento dos dados
- - [ ] :robot: Modelos de ML
- - [ ] :clipboard: Conclusões
- - [ ] :heavy_check_mark: Finalizado
-
-![enter image description here](https://github.com/itsGab/previsao_uti_em_covid/raw/main/images/previsao_covid.jpg)
-
-# 1.  Introdução
-
-## 1.1.  Contextualização
+##  Contextualização
     
 A pandemia de COVID-19 atingiu o mundo inteiro, sobrecarregando os sistemas de saúde despreparados para uma demanda tão intensa e demorada de leitos de UTI, profissionais, equipamentos de proteção individual e recursos de saúde.
 
 Tendo como intuito de melhor preparar os sistemas de saúde e evitar colapsos, foi desenvolvido um desafio no [Kaggle](https://www.kaggle.com/S%C3%ADrio-Libanes/covid19), definidos pela necessidade de leitos de UTI acima da capacidade (presumindo-se que haja recursos humanos, EPIs e profissionais disponíveis), utilizando dados clínicos individuais - em vez de dados epidemiológicos e populacionais.
 
 
-## 1.2. Objetivos
+##  Objetivos
     
 ### Tarefa 01
 
@@ -31,7 +21,7 @@ Prever admissão na UTI de casos confirmados de COVID-19. Com base nos dados dis
 Prever NÃO admissão à UTI de casos COVID-19 confirmados. Com base na subamostra de dados amplamente disponíveis, é viável prever quais pacientes precisarão de suporte de unidade de terapia intensiva? O objetivo é fornecer aos hospitais locais e temporários uma resposta boa o suficiente, para que os médicos de linha de frente possam dar alta com segurança e acompanhar remotamente esses pacientes.
   
 
-## 1.3. Os dados
+##  Os dados
       
 
 ### Rótulo de saída (label output)
@@ -113,24 +103,39 @@ No total, são 54 recursos, expandidos quando pertinentes à média, mediana, m�
 > 
 > Para mais informações sobre o desafio e base de dados _raw_, você pode acessar a página do [desafio no Kaggle](https://www.kaggle.com/S%C3%ADrio-Libanes/covid19).
 
-# 2. Como foi feito o projeto
+# Projeto
 
 ### Análise exploratória
-* Abertura dos dados, para ver com o que estavamos trabalhando
-* Separação de colunas por tipo, para dividir as análises
-* Explicação dos dados encontrados
+Foi feito uma análise explatória inicial nos dados para identificarmos que tipo de dados estavam sendo apresentados.
+Em seguida identificamos tipos de colunas que foram agrupadas por tipo
+
 
 ### 2.1. Tratamento dos dados
+O tratamento dos dados foi feito com:
 * Remoção dos pacientes que foram admitidos na UTI na primeira janela ("0-2")
 * Preparação da janela primeira janela, para a variável alvo ('UCI') igual a 1, para os pacientes que foram precisaram da UTI após a primeira janela.
 * Preenchimento dados vazios, de exames laboratoriais e sinais vitais, ignorando dados obtidos após a admissão na UTI,  utilizando `pd.DataFrame.fillna(method=bfill)`
 * Manutenção apenas da primeira janela, tendo em vista, a necessidade da previsão de admissão para a UTI o mais cedo possível
 * Transformação dos dados "AGE_PERCENTIL" para dados categóricos, utilizando `pd.get_dummies()`.
 * Remoção das colunas, de exames laboratoriais e sinais vitais, com alta correlação.
-* Exportação do conjunto de dados tratado.
+* Por fim exportação do conjunto de dados tratado.
 
 ### Modelos de ML
-* Nada ainda
+Inicialmente foi usado o LazyClassifier para se ter uma base dos modelos de classificação e sua eficácia, após, foi selecionado vários modelos de classificação para se criar modelos de teste.
+
+A métrica que foi atribuída a maior importância, foi o *recall*, métrica qual, representa o acerto dos casos positivos, ou seja, classifica com "admissão UTI" os casos que realmente são. Quanto mais próximo de um melhor (indo de 0 a 1).
+
+Após esse verificação inicial dos modelos, foi trabalhado uma verificação com dados de treino e teste estratificados e houve um resultado completamente diferente, caindo drasticamente modelos que estavam indo bem na métrica de *recall*.
+
+Por último, usando um *cross validation* nos modelos selecionados, o modelos apresentaram valores baixos para *recall*, em relação da importância da previsão, estando em jogo o erro do modelo, uma vida. O maior resultado de *recall* foi de 0,62.
 
 ### Conclusões
-* Nada ainda
+
+Os modelos gerados apresentam resultados muito pobres em frente a importância de suas previsões.
+
+MODELO SE MOSTROU INEFICAZ
+
+Para consertar isso, será necessário voltar a análise dos dados e/ou trabalhar diferentes abordagens no Machine Learning.
+
+
+# O NOTEBOOK TESTE FINAL é o designado para a testagem de dados externos ao do analisado e usado para treino.
