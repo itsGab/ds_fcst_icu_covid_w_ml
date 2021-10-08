@@ -99,18 +99,20 @@ No total, são 54 recursos, expandidos quando pertinentes à média, mediana, m�
 
 **Dicas e truques**: Considerando que um modelo preditivo usando todas as janelas de tempo provavelmente produzirá uma maior precisão, um bom modelo usando apenas o primeiro (0-2) provavelmente será mais clinicamente relevante. A criatividade é muito bem-vinda, sinta-se à vontade com a engenharia de recursos e as janelas de tempo. Atenção às medidas repetidas em indivíduos, uma vez que esses valores são (positivamente) correlacionados ao brincar com os dados.
 
-> Para mais informações sobre os dados e a análise exploratória feita, você pode acessar o [notebook de análise exploratória](https://github.com/itsGab/previsao_uti_em_covid/blob/main/notebooks/analise_exploratoria.ipynb).
+> Para mais informações sobre os dados e a análise exploratória feita, você pode acessar os [notebooks](https://github.com/itsGab/previsao_uti_em_covid/tree/main/notebooks).
 > 
 > Para mais informações sobre o desafio e base de dados _raw_, você pode acessar a página do [desafio no Kaggle](https://www.kaggle.com/S%C3%ADrio-Libanes/covid19).
 
 # Projeto
 
 ### Análise exploratória
+
 Foi feito uma análise explatória inicial nos dados para identificarmos que tipo de dados estavam sendo apresentados.
 Em seguida identificamos tipos de colunas que foram agrupadas por tipo
 
 
-### 2.1. Tratamento dos dados
+### Tratamento dos dados
+
 O tratamento dos dados foi feito com:
 * Remoção dos pacientes que foram admitidos na UTI na primeira janela ("0-2")
 * Preparação da janela primeira janela, para a variável alvo ('UCI') igual a 1, para os pacientes que foram precisaram da UTI após a primeira janela.
@@ -120,7 +122,8 @@ O tratamento dos dados foi feito com:
 * Remoção das colunas, de exames laboratoriais e sinais vitais, com alta correlação.
 * Por fim exportação do conjunto de dados tratado.
 
-### Modelos de ML
+### Modelos de ML 
+
 Inicialmente foi usado o LazyClassifier para se ter uma base dos modelos de classificação e sua eficácia, após, foi selecionado vários modelos de classificação para se criar modelos de teste.
 
 A métrica que foi atribuída a maior importância, foi o *recall*, métrica qual, representa o acerto dos casos positivos, ou seja, classifica com "admissão UTI" os casos que realmente são. Quanto mais próximo de um melhor (indo de 0 a 1).
@@ -138,4 +141,4 @@ MODELO SE MOSTROU INEFICAZ
 Para consertar isso, será necessário voltar a análise dos dados e/ou trabalhar diferentes abordagens no Machine Learning.
 
 
-# O NOTEBOOK TESTE FINAL é o designado para a testagem de dados externos ao do analisado e usado para treino.
+[O **NOTEBOOK** TESTE FINAL](https://github.com/itsGab/previsao_uti_em_covid/blob/main/notebooks/5_TESTE_FINAL_nb_para_teste_com_dados_externos.ipynb) é o designado para a testagem de dados externos ao do analisado e usado para treino.
